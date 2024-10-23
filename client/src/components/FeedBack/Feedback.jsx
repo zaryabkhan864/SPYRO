@@ -24,7 +24,7 @@ const Feedback = () => {
                             </div>
                             {/* <!-- Small profile picture and username side by side --> */}
                             <div class="d-flex align-items-center">
-                                <img src={CF1} alt="Profile Picture" class="rounded-circle" width="50" />
+                                <img src={CF1} alt="Profile_Picture" class="rounded-circle" width="50" />
                                 <p class="ml-3 mb-0 ms-3">Courtney Henry</p>
                             </div>
                         </div>
