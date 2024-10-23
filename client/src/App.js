@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from './components/Banner/Banner';
-// import Classess from './components/Classess/Classess';
+import Classess from './components/Classess/Classess';
 // import DownloadPart from './components/DownloadPart/DownloadPart';
 // import Feedback from './components/FeedBack/Feedback';
 // import Instructors from './components/Instructors/Instructors';
@@ -18,8 +18,8 @@ function App() {
       <Banner />
       <Moves />
        <LifeStyle />
-      {/* <Classess />
-      <Instructors />
+       <Classess />
+      {/* <Instructors />
       <DownloadPart />
       <VideoPart />
       <Feedback /> */}
