@@ -1,27 +1,25 @@
-import React from 'react'
-import { Container } from 'react-bootstrap'
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
-import DownloadImg from "../../Images/downloadImg.png"
-import Card from 'react-bootstrap/Card';
+import React from 'react';
+import DownloadImg from '../../Images/downloadImg.png';
+
 const DownloadPart = () => {
     return (
-        <Container fluid className="download-bg ">
-            <Row className="d-flex">
-                <Col xl={7} className="download-text-area text-white ps-5">
-                    <h1>Download the most loved</h1>
-                    <h2>fitness app</h2>
-                    <h5>Start your fitness journey with us. Join the cult!</h5>
-                    <Button className="me-5">Google Play</Button>
-                    <Button>App Store</Button>
-                </Col>
-                <Col xl={5}>
-                    <Card.Img variant="top" src={DownloadImg} />
-                </Col>
-            </Row>
-        </Container>
-    )
+        <div className="bg-gradient-to-t from-orangeL to-orangeR text-white py-12">
+            <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between px-4 lg:px-0">
+                <div className="lg:w-7/12 mb-8 lg:mb-0 lg:pl-10">
+                    <h1 className="font-Outfit font-semibold text-48px">Download the most loved</h1>
+                    <h2 className="font-Outfit font-semibold text-48px mt-2">fitness app</h2>
+                    <h5 className="font-Outfit font-semibold text-20px mt-5">Start your fitness journey with us. Join the cult!</h5>
+                    <div className="mt-6 space-x-4">
+                        <button className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-lg">Google Play</button>
+                        <button className="bg-gray-800 hover:bg-gray-900 text-white py-2 px-6 rounded-lg">App Store</button>
+                    </div>
+                </div>
+                <div className="lg:w-5/12">
+                    <img src={DownloadImg} alt="Download app" className="w-full object-cover" />
+                </div>
+            </div>
+        </div>
+    );
 }
 
-export default DownloadPart
+export default DownloadPart;

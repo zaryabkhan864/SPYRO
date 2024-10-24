@@ -5,7 +5,7 @@ const LifeStyle = () => {
     return (
         <div className="bg-[#1E1E1E] text-white py-5 relative">
             {/* First blurred line */}
-            <div className="absolute right-0 bottom-1/3 w-96 h-14 bg-gradient-to-t from-orangeL to-orangeR   opacity-30"></div>
+            <div className="absolute right-0 bottom-1/4 w-96 h-14 bg-gradient-to-t from-orangeL to-orangeR   opacity-30"></div>
             {/* Second blurred line */}
             <div className="absolute right-0 bottom-14 w-1/2 h-14 bg-gradient-to-t from-orangeL to-orangeR  opacity-30"></div>
 
@@ -25,7 +25,7 @@ const LifeStyle = () => {
                     <img className="relative z-10 w-full h-auto " src={lifeStyleImage} alt="life style" />
                 </div>
             </div>
-      
+
         </div>
     );
 };
