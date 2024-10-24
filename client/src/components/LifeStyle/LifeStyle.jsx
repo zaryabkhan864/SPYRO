@@ -25,6 +25,7 @@ const LifeStyle = () => {
                     <img className="relative z-10 w-full h-auto " src={lifeStyleImage} alt="life style" />
                 </div>
             </div>
+      
         </div>
     );
 };
