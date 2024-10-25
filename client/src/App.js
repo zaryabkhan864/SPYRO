@@ -8,6 +8,7 @@ import LifeStyle from './components/LifeStyle/LifeStyle';
 import Moves from './components/Moves/Moves';
 import SNavbar from './components/Navbar/SNavbar';
 import VideoPart from './components/Videopart/VideoPart';
+import FAQS from './components/FAQS/FAQS';
 
 
 function App() {
@@ -22,7 +23,8 @@ function App() {
       <Instructors />
       <DownloadPart />
       <VideoPart />
-      <Feedback /> 
+      <Feedback />
+      <FAQS />
     </React.Fragment>
   );
 }
