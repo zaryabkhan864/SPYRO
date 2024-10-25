@@ -14,17 +14,16 @@ import FAQS from './components/FAQS/FAQS';
 function App() {
   return (
     <React.Fragment>
-      {/* <nav className={navbar ? 'navbar active' : 'navbar'}>  */}
       <SNavbar />
       <Banner />
-      <Moves />
-      <LifeStyle />
-      <Classess />
+     <Moves />
+    <LifeStyle />
+     <Classess />
       <Instructors />
-      <DownloadPart />
-      <VideoPart />
+     <DownloadPart />
+   <VideoPart />
       <Feedback />
-      <FAQS />
+     <FAQS /> 
     </React.Fragment>
   );
 }

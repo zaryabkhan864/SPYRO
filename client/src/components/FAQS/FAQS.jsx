@@ -13,45 +13,45 @@ const FAQS = () => {
         {
             id: '01',
             question: 'What are the advantages of your service?',
-            answer: 'If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing...',
+            answer: 'If you go over your organizations or user limit, a member of the team will reach out about bespoke pricing...',
         },
         {
             id: '02',
             question: 'Are there any fees or commissions in addition to the monthly subscription?',
-            answer: 'If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing...',
+            answer: 'If you go over your organizations or user limit, a member of the team will reach out about bespoke pricing...',
         },
         {
             id: '03',
-            question: 'You really don\'t charge per user? Why not?',
-            answer: 'If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing...',
+            question: "You really don't charge per user? Why not?",
+            answer: 'If you go over your organizations or user limit, a member of the team will reach out about bespoke pricing...',
         },
         {
             id: '04',
             question: 'What happens when I go over my monthly active limit?',
-            answer: 'If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing...',
+            answer: 'If you go over your organizations or user limit, a member of the team will reach out about bespoke pricing...',
         },
         {
             id: '05',
             question: 'Can your service help me understand how to work with my product?',
-            answer: 'If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing...',
+            answer: 'If you go over your organizations or user limit, a member of the team will reach out about bespoke pricing...',
         },
         {
             id: '06',
             question: 'Which third-party application do you integrate with?',
-            answer: 'If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing...',
+            answer: 'If you go over your organizations or user limit, a member of the team will reach out about bespoke pricing...',
         },
         {
             id: '07',
             question: 'I have another question!',
-            answer: 'If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing...',
+            answer: 'If you go over your organizations or user limit, a member of the team will reach out about bespoke pricing...',
         },
     ];
 
     return (
         <div className="relative font-inter antialiased bg-[#1E1E1E] text-white">
             <main className="relative min-h-screen flex flex-col justify-center overflow-hidden">
-                <div className="w-full px-44 mx-auto md:py-24">
-                    <h1 className="font-Outfit font-semibold text-40px mb-4 text-center">Frequently Asked Questions</h1>
+                <div className="w-full px-4 sm:px-6 lg:px-36 mx-auto md:py-12 lg:py-24">
+                    <h1 className="font-Outfit font-semibold text-2xl md:text-3xl lg:text-4xl mb-4 text-center">Frequently Asked Questions</h1>
 
                     <div className="divide-y divide-slate-200">
                         {faqsData.map((faq) => (
@@ -65,9 +65,9 @@ const FAQS = () => {
                                         aria-expanded={expanded === faq.id}
                                         aria-controls={`faqs-text-${faq.id}`}
                                     >
-                                        <span className="font-Outfit font-semibold text-24px">{faq.question}</span>
+                                        <span className="font-Outfit font-semibold text-lg md:text-xl">{faq.question}</span>
                                         <svg
-                                            className="fill-indigo-500 shrink-0 ml-8"
+                                            className="fill-indigo-500 shrink-0 ml-4 md:ml-8"
                                             width="16"
                                             height="16"
                                             xmlns="http://www.w3.org/2000/svg"
@@ -108,13 +108,13 @@ const FAQS = () => {
                         ))}
                     </div>
 
-                    <div className="flex flex-row bg-orangeL transform -skew-x-12 py-3 px-9 align-middle">
-                        <div className="flex-3">
-                            <h1 className="font-Outfit font-semibold text-40px">Are you ready to change?</h1>
-                            <p className="font-Outfit font-regular text-16px">Challenge your strength. Stretch your body. Breathe easy. Our team of world-class instructors will empower</p>
+                    <div className="flex flex-col lg:flex-row bg-orangeL transform -skew-x-12 py-3 px-4 sm:px-6 lg:px-9 align-middle mt-8 lg:mt-12">
+                        <div className="flex-1">
+                            <h1 className="font-Outfit font-semibold text-2xl md:text-3xl lg:text-4xl">Are you ready to change?</h1>
+                            <p className="font-Outfit font-regular text-sm md:text-base">Challenge your strength. Stretch your body. Breathe easy. Our team of world-class instructors will empower</p>
                         </div>
-                        <div className="flex-2 flex justify-end items-center">
-                            <OneSideCurveButtonWithOutline className="w-3/4 lg:w-1/2" />
+                        <div className="flex-1 flex justify-center lg:justify-end items-center mt-4 lg:mt-0">
+                            <OneSideCurveButtonWithOutline text="Start the free trial" />
                         </div>
                     </div>
                 </div>
