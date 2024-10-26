@@ -27,7 +27,7 @@ const Banner = () => {
                             Get ready to sweat it out and achieve your fitness goals with our high-energy fitness classes! Our classes are designed to cater to all fitness levels and provide a fun and motivating environment to help you reach your peak performance.
                         </p>
                         <div className="mt-6">
-                            <OneSideCurveButton />
+                            <OneSideCurveButton text="Start free trail"/>
                         </div>
                     </div>
                 </div>

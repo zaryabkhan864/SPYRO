@@ -43,17 +43,17 @@ const Classess = () => {
     return (
         <div
             className="w-full min-h-screen bg-cover bg-center pb-10 lg:pb-20"
-            style={{ backgroundImage: `url(${classessBG})` }} // Set background image
+            style={{ backgroundImage: `url(${classessBG})` }}
         >
             <div className="flex flex-col items-center">
-
                 <div className="text-center px-4 sm:px-0">
                     <h1 className="text-white font-Outfit font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-48px py-10 lg:py-20">Classes</h1>
                 </div>
 
-                <div className="flex flex-wrap justify-center gap-4 text-white px-4">
+                {/* Use grid for consistent card heights */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 text-white sm:px-0 md:px-24 lg:px-28">
                     {cardData.map((card, index) => (
-                        <div key={index} className="bg-transparent w-full sm:w-64 md:w-72">
+                        <div key={index} className="bg-transparent flex flex-col h-full px-10">
                             <div className="relative flex justify-center text-center mb-5">
                                 <div className="relative">
                                     <div
@@ -64,7 +64,7 @@ const Classess = () => {
                                 </div>
                             </div>
 
-                            <div className="px-4">
+                            <div className="flex flex-col flex-grow">
                                 <div className="flex justify-between font-Outfit font-medium text-sm sm:text-16px">
                                     <span>{card.category}</span>
                                     <span>{card.students} Students</span>
@@ -73,7 +73,7 @@ const Classess = () => {
                                     <span className="font-Outfit font-semibold text-lg sm:text-24px">{card.title}</span>
                                     <span className="font-Outfit font-medium text-sm sm:text-16px">{card.duration}</span>
                                 </div>
-                                <div className="pt-2 font-Outfit font-medium text-sm sm:text-16px">
+                                <div className="pt-2 font-Outfit font-medium text-sm sm:text-16px flex-grow">
                                     <p><span>Instructor:</span><span> {card.instructor}</span></p>
                                     <ul className="list-disc pl-5 text-white">
                                         <li>
@@ -89,12 +89,15 @@ const Classess = () => {
                                     </ul>
                                 </div>
                                 <div className="flex justify-between mt-4">
-                                    <OneSideCurveButton />
+                                    <OneSideCurveButton text="learn more" />
                                     <OneSideCurveButtonWithOutline text="Start a free trial" />
                                 </div>
                             </div>
                         </div>
                     ))}
+                </div>
+                <div className='text-center mt-5'>
+                    <OneSideCurveButton text="See all" />
                 </div>
             </div>
         </div>

@@ -13,7 +13,7 @@ const LifeStyle = () => {
                 <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold">Find what moves you</h1>
             </div>
 
-            <div className="px-4 sm:px-12 md:px-24 lg:px-72 my-6 sm:my-8 lg:my-10 text-center">
+            <div className="sm:px-12 md:px-72 lg:px-72 my-6 sm:my-8 lg:my-10 text-center">
                 <span className="font-Outfit font-regular text-sm sm:text-base lg:text-lg xl:text-20px">
                     Wake up with a sunrise meditation, sweat it out with lunchtime HIIT, or unwind with an evening flow. You’ll find movement for every mood with classes sorted by time, style, and skill level.
                 </span>

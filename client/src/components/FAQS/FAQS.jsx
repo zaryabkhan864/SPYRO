@@ -50,10 +50,10 @@ const FAQS = () => {
     return (
         <div className="relative font-inter antialiased bg-[#1E1E1E] text-white">
             <main className="relative min-h-screen flex flex-col justify-center overflow-hidden">
-                <div className="w-full px-4 sm:px-6 lg:px-36 mx-auto md:py-12 lg:py-24">
+                <div className="w-full px-10 sm:px-6 md:mx-8 lg:px-36 mx-auto md:py-12 lg:py-24 ">
                     <h1 className="font-Outfit font-semibold text-2xl md:text-3xl lg:text-4xl mb-4 text-center">Frequently Asked Questions</h1>
 
-                    <div className="divide-y divide-slate-200">
+                    <div className="divide-y divide-slate-200 ">
                         {faqsData.map((faq) => (
                             <div key={faq.id} className="py-4">
                                 <h2>
@@ -108,7 +108,7 @@ const FAQS = () => {
                         ))}
                     </div>
 
-                    <div className="flex flex-col lg:flex-row bg-orangeL transform -skew-x-12 py-3 px-4 sm:px-6 lg:px-9 align-middle mt-8 lg:mt-12">
+                    <div className="flex flex-col lg:flex-row bg-orangeL transform -skew-x-12 py-3 px-10 sm:px-6 lg:px-9 align-middle mt-8 lg:mt-12">
                         <div className="flex-1">
                             <h1 className="font-Outfit font-semibold text-2xl md:text-3xl lg:text-4xl">Are you ready to change?</h1>
                             <p className="font-Outfit font-regular text-sm md:text-base">Challenge your strength. Stretch your body. Breathe easy. Our team of world-class instructors will empower</p>
