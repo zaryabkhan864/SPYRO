@@ -31,7 +31,7 @@ const Feedback = () => {
         >
             <div className="mx-auto px-6 sm:px-10 lg:px-28">
                 <div className="text-center mb-8 pt-20 pb-10">
-                    <h1 className="font-Outfit font-semibold text-3xl sm:text-4xl text-white">Client’s Feedback</h1>
+                    <h1 className=" font-Outfit font-semibold text-48px text-white">Client’s Feedback</h1>
                 </div>
                 <div className="flex flex-wrap justify-center">
                     {reviews.map((item, index) => (

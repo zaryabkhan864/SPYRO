@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Banner from './components/Banner/Banner';
 import Classess from './components/Classess/Classess';
 import DownloadPart from './components/DownloadPart/DownloadPart';
@@ -10,21 +11,29 @@ import SNavbar from './components/Navbar/SNavbar';
 import VideoPart from './components/Videopart/VideoPart';
 import FAQS from './components/FAQS/FAQS';
 import Footer from './components/Footer/Footer';
+import HomeComponent from './components/FAQS/HomeComponent';
+import Strength from './components/ClassesDetails/Strength';
+import BurnOut from './components/ClassesDetails/BurnOut';
+import BootCamp from './components/ClassesDetails/BootCamp';
 
 function App() {
   return (
     <React.Fragment>
-      <SNavbar />
-      <div id="banner"><Banner /></div>
-      <div id="moves"><Moves /></div>
-      <div id="lifestyle"><LifeStyle /></div>
-      <div id="classess"><Classess /></div>
-      <div id="instructors"><Instructors /></div>
-      <div id="download"><DownloadPart /></div>
-      <div id="video"><VideoPart /></div>
-      <div id="feedback"><Feedback /></div>
-      <div id="faqs"><FAQS /></div>
-      <Footer />
+      <Router>
+        <SNavbar />
+        <div id="banner"><Banner /></div>
+        <Routes>
+          <Route path="/" element={<HomeComponent />} />
+          <Route path="/Classes" element={<Classess />} />
+          <Route path="/team" element={<Instructors />} />
+          <Route path="/about-us" element={<VideoPart />} />
+          <Route path="/Strength" element={<Strength />} />
+          <Route path="/BurnOut" element={<BurnOut />} />
+          <Route path="/BootCamp" element={<BootCamp />} />
+
+        </Routes>
+        <Footer />
+      </Router>
     </React.Fragment>
   );
 }

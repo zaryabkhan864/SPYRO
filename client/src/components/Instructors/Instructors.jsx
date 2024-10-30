@@ -33,7 +33,7 @@ const Instructors = () => {
     return (
         <div className="bg-[#1E1E1E] py-10 relative">
             <div className="text-center text-white">
-                <h1 className="font-Outfit font-semibold text-48px mb-10">Instructors</h1>
+                <h1 className=" font-Outfit font-semibold text-48px mb-10">Instructors</h1>
             </div>
             <div className="absolute left-0 bottom-1/4 w-96 h-14 bg-gradient-to-t from-orangeL to-orangeR   opacity-30"></div>
             {/* Second blurred line */}

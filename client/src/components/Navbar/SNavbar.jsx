@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import OneSideCurveButton from '../Buttons/OneSideCurveButton';
+import { Link } from 'react-router-dom';
 
 const SNavbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -20,18 +21,18 @@ const SNavbar = () => {
             className={`fixed w-full top-0 z-50 transition-colors duration-300 ${isScrolled ? 'bg-[#1E1E1E]' : 'bg-transparent'}`}
         >
             <div className="container mx-auto flex justify-between items-center py-4 px-4 lg:px-0">
-                <a
-                    href="#banner"
+                <Link
+                    to='/'
                     className="font-extrabold text-2xl text-transparent bg-gradient-to-r from-orangeL to-orangeR bg-clip-text no-underline"
                     id="Nav-Icon"
                 >
                     SPYRO
-                </a>
+                </Link>
 
                 <div className="hidden lg:flex justify-center items-center space-x-6 font-Outfit text-lg font-medium">
-                    <a href="#classess" className="text-white no-underline">Classes</a>
-                    <a href="#instructors" className="text-white no-underline">Team</a>
-                    <a href="#lifestyle" className="text-white no-underline">About Us</a>
+                    <Link to="/Classes" className="text-white no-underline">Classes</Link>
+                    <Link to="/team" className="text-white no-underline">Team</Link>
+                    <Link to="/about-us" className="text-white no-underline">About Us</Link>
                     <a href="#gallery" className="text-white no-underline">Gallery</a>
                 </div>
 

@@ -51,7 +51,7 @@ const FAQS = () => {
         <div className="relative font-inter antialiased bg-[#1E1E1E] text-white">
             <main className="relative min-h-screen flex flex-col justify-center overflow-hidden">
                 <div className="w-full px-10 sm:px-6 md:mx-8 lg:px-36 mx-auto md:py-12 lg:py-24 ">
-                    <h1 className="font-Outfit font-semibold text-2xl md:text-3xl lg:text-4xl mb-4 text-center">Frequently Asked Questions</h1>
+                    <h1 className=" font-Outfit font-semibold text-48px mb-4 text-center">Frequently Asked Questions</h1>
 
                     <div className="divide-y divide-slate-200 ">
                         {faqsData.map((faq) => (

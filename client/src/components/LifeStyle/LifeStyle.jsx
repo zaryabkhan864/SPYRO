@@ -10,7 +10,7 @@ const LifeStyle = () => {
             <div className="absolute right-0 bottom-10 sm:bottom-14 w-1/2 h-10 sm:h-12 lg:h-14 bg-gradient-to-t from-orangeL to-orangeR opacity-30"></div>
 
             <div className="flex justify-center text-center px-4 sm:px-6 lg:px-8">
-                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold">Find what moves you</h1>
+                <h1 className=" font-Outfit font-semibold text-48px">Fit for your lifestyle</h1>
             </div>
 
             <div className="sm:px-12 md:px-72 lg:px-72 my-6 sm:my-8 lg:my-10 text-center">

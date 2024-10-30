@@ -5,6 +5,7 @@ import cc3 from '../../Images/cc1.png';
 import OneSideCurveButton from '../Buttons/OneSideCurveButton';
 import classessBG from '../../Images/classessBG.png';
 import OneSideCurveButtonWithOutline from '../Buttons/OneSideCurveButtonWithOutline';
+import { Link } from 'react-router-dom';
 
 const Classess = () => {
     const cardData = [
@@ -16,7 +17,8 @@ const Classess = () => {
             instructor: "Esther Howard",
             classes: 30,
             difficulty: "Beginner",
-            image: cc1
+            image: cc1,
+            link: '/Strength'
         },
         {
             category: "Fitness",
@@ -26,7 +28,8 @@ const Classess = () => {
             instructor: "Wade Warren",
             classes: 45,
             difficulty: "Medium",
-            image: cc2
+            image: cc2,
+            link: '/BurnOut'
         },
         {
             category: "Yoga",
@@ -36,7 +39,8 @@ const Classess = () => {
             instructor: "Robert Fox",
             classes: 52,
             difficulty: "Hard",
-            image: cc3
+            image: cc3,
+            link: '/BootCamp'
         }
     ];
 
@@ -47,7 +51,7 @@ const Classess = () => {
         >
             <div className="flex flex-col items-center">
                 <div className="text-center px-4 sm:px-0">
-                    <h1 className="text-white font-Outfit font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-48px py-10 lg:py-20">Classes</h1>
+                    <h1 className="text-white font-Outfit font-semibold text-48px py-10 lg:py-20">Classes</h1>
                 </div>
 
                 {/* Use grid for consistent card heights */}
@@ -89,7 +93,7 @@ const Classess = () => {
                                     </ul>
                                 </div>
                                 <div className="flex justify-between mt-4">
-                                    <OneSideCurveButton text="learn more" />
+                                    <Link to={card.link}><OneSideCurveButton text="learn more" /></Link>
                                     <OneSideCurveButtonWithOutline text="Start a free trial" />
                                 </div>
                             </div>
