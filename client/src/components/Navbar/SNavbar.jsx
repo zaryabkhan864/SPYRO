@@ -37,7 +37,7 @@ const SNavbar = () => {
                 </div>
 
                 <div className="hidden lg:flex items-center">
-                    <OneSideCurveButton text="Contact Us" />
+                    <Link to="/contact_us"><OneSideCurveButton text="Contact Us" p_x="2vw" p_y="10px" /></Link>
                 </div>
 
                 <div className="lg:hidden flex items-center">
@@ -53,7 +53,7 @@ const SNavbar = () => {
                     <a href="#instructors" className="text-lg no-underline">Team</a>
                     <a href="#lifestyle" className="text-lg no-underline">About Us</a>
                     <a href="#gallery" className="text-lg no-underline">Gallery</a>
-                    <OneSideCurveButton />
+                    <Link to="/contact_us"><OneSideCurveButton text="Contact Us" p_x="15vw" p_y="10px" /></Link>
                 </div>
             )}
         </nav>

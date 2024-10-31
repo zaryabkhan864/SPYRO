@@ -93,7 +93,7 @@ const Classess = () => {
                                     </ul>
                                 </div>
                                 <div className="flex justify-between mt-4">
-                                    <Link to={card.link}><OneSideCurveButton text="learn more" /></Link>
+                                    <Link to={card.link}><OneSideCurveButton text="learn more" p_x="0.5rem" p_y="0.5rem" /></Link>
                                     <OneSideCurveButtonWithOutline text="Start a free trial" />
                                 </div>
                             </div>
@@ -101,7 +101,7 @@ const Classess = () => {
                     ))}
                 </div>
                 <div className='text-center mt-5'>
-                    <OneSideCurveButton text="See all" />
+                    <OneSideCurveButton text="See all" p_x="8rem" p_y="0.5rem" />
                 </div>
             </div>
         </div>
