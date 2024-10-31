@@ -48,7 +48,7 @@ const Feedback = () => {
                                         {Array(5).fill(0).map((_, i) => (
                                             <span
                                                 key={i}
-                                                className={`fa fa-star ${i < item.rating ? "checked" : ""}`}
+                                                className={`fa fa-star px-1 ${i < item.rating ? "checked" : ""}`}
                                             ></span>
                                         ))}
                                     </div>
